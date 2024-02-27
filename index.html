@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">  
+        <h1 id="title">Reading Survey Form</h1>
+        <p id="description">Thank you for the time.</p>
+      </header>
+
+      <form id="survey-form" >
+        <div class="forum-group">
+          <label id="name-label">Name <input id="name" type="text" name="name" max="50" placeholder="Enter your name" required /></label>
+        </div>
+        <div class="forum-group">
+          <label id="email-label" for="email">Email <input type="email" name="email" id="email" placeholder="Enter your Email" required></label>
+        </div>
+        <div class="forum-group">
+          <label id="number-label" for="number">Age <input type="number" name="number" id="number" min="10" max="99" placeholder="Age"></label>
+        </div>  
+        <div class="forum-group">
+          <label>How often do you read?</label>
+          <label for="never"><input type="radio" name="time-read" id="never" value="never"> Never</label>
+          <label for="tow-time"><input type="radio" name="time-read" id="tow-time" value="1time"> 1-2 times a month </label>
+          <label for="three-time"><input type="radio" name="time-read" id="three-time" value="2month"> 2-3 times a month</label>
+          <label for="four-time">
+            <input type="radio" name="time-read" id="four-time" value="4month"> 4-5 times a month</label>
+          <label for="every-time">
+          <input type="radio" name="time-read" id="every-time" value="everyday"> Everyday</label>
+        </div>
+        <div class="forum-group">
+          <label>How much time do you spend reading? </label>
+          <label for="dropdown">
+            <select id="dropdown" name="time-spend">
+              <option name="radio-group" value="">Select one</option>
+              <option name="radio-group" value="1">Less than 15 minutes</option>
+              <option name="radio-group" value="2">15 minutes</option>
+              <option name="radio-group" value="3">30 minutes</option>
+              <option name="radio-group" value="4">1 hour</option>
+              <option name="radio-group" value="5">more than 1 hour</option>
+            </select>
+          </label>
+            
+        </div>
+        <div class="forum-group">  
+          <label>Which type of books do you prefer to read? </label>
+          <label for="crime"><input type="checkbox" id="crime" name="book-type" value="crime"> Crime</label>
+          <label for="fantasy"><input type="checkbox" id="fantasy" name="book-type" value="fantasy"> Fantasy</label>
+          <label for="poetry"><input type="checkbox" id="poetry" name="book-type" value="poetry"> Poetry</label>
+          <label for="romance"><input type="checkbox" id="romance" name="book-type" value="romance"> Romance</label>
+          <label for="biography"><input type="checkbox" id="biography" name="book-type" value="biography"> Biography</label>
+          <label for="self-help"><input type="checkbox" id="self-help" name="book-type" value="self-help"> Self-help</label>
+          <label for="other"><input type="checkbox" id="other" name="book-type" value="other"> Other<label>
+        </div>
+        <div class="forum-group">
+          <label>What is your favorite place to read?</label>
+          <label for="library"><input type="checkbox" id="library" name="read-place" value="library"> In a Library</label>
+           <label for="park"><input type="checkbox" id="park" name="read-place" value="park"> In a Park</label>
+            <label for="home"><input type="checkbox" id="home" name="read-place" value="home"> At Home</label>
+        </div>
+        <div class="forum-group">
+          <label>What medium do you choose to read from?</label>
+            <label for="print-book"><input type="checkbox" id="print-book" name="print-book" value="print-book"> Print book</label>
+            <label for="ebook"><input type="checkbox" id="ebook" name="ebook" value="ebook"> E-Book</label>
+            <label for="website"><input type="checkbox" id="website" name="website" value="website"> Website</label>
+            <label for="newspaper"><input type="checkbox" id="newspaper" name="newspaper" value="newspaper"> Newspaper</label>
+        </div>
+        <div class="forum-group">
+          <label>Witch is Your favorite book?</label>
+          <textarea rows="3" cols="30" placeholder="My favorite book is..."></textarea> 
+        </div>   
+        <div class="forum-group">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+      <footer>
+        <p><a href="https://www.freecodecamp.org/learn/">freeCodeCamp</a> Survey Form Project</p>
+      </footer>
+    </div>
+  </body>
+</html>
